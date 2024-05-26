@@ -2,7 +2,7 @@ import '../components/SingleTodo.css';
 import { AiFillEdit } from "react-icons/ai";
 import { AiFillDelete } from "react-icons/ai";
 import { MdDone } from "react-icons/md";
-import { Todo } from '../Model';
+import Todo from '../model';
 import { useEffect, useRef, useState } from 'react';
 import { KeyboardEvent } from 'react';
 
@@ -28,7 +28,7 @@ const SingleTodo:React.FC<Props> = ({todo,todos,setTodos}) => {
         );
     }
 
-    const handleEdit=(id:number)=>{
+    const handleEdit=()=>{
         if(!todo.isComplete){
             setEdit(!edit);
         }
@@ -53,7 +53,7 @@ const SingleTodo:React.FC<Props> = ({todo,todos,setTodos}) => {
     <li className='todos__single'>
         {todo.isComplete ? <s className='todos__single--text'>{todo.todo}</s>: edit ? <input ref={inputRef} className='todos__single--input' type="text" value={editTodo} onChange={(e)=>setEditTodo(e.target.value)} onKeyDown={(e)=>{handleOnKeyPress(todo.id,e)}}/> : <p className='todos__single--text'>{todo.todo}</p>}
         <div className='todos__single-icons'>
-            <span className='icon' onClick={()=>handleEdit(todo.id)}><AiFillEdit /></span>
+            <span className='icon' onClick={()=>handleEdit()}><AiFillEdit /></span>
             <span className='icon' onClick={()=>handleDelete(todo.id)}><AiFillDelete /></span>
             <span className='icon' onClick={()=>handleComplete(todo.id)}><MdDone /></span>
         </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../src/App.css';
 import InputField from './components/InputField';
-import { Todo } from './Model';
+import Todo from './model.ts';
 import TodoList from './components/TodoList';
 
 const App : React.FC = () => {

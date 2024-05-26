@@ -1,5 +1,5 @@
 import "../components/TodoList.css"
-import { Todo } from "../Model"
+import Todo from "../model";
 import SingleTodo from "./SingleTodo";
 
 interface Props{
