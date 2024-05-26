@@ -1,0 +1,47 @@
+.todos__single{
+    display: flex;
+    width: 29.5%;
+    border-radius: 5px;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    padding:20px;
+    height: 25px;
+    background: yellow;
+}
+
+
+.todos__single--text{
+    line-height: 0px;
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+    font-style: normal;
+    font-family: "Palanquin", sans-serif;
+}
+
+.todos__single--input{
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+    outline:none;
+    font-family: "Palanquin", sans-serif;
+    font-style: normal;
+}
+
+
+
+.todos__single-icons{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:400px) {
+    .todos__single-icons{
+        gap:5px;
+    }
+}

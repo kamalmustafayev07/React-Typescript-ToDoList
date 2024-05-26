@@ -1,0 +1,22 @@
+.app-container{
+  width: 1480px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-container__heading{
+  color:white;
+  font-size: 36px;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+@media screen and (max-width:1480px){
+  .app-container{
+    width: 100%;
+  }
+}

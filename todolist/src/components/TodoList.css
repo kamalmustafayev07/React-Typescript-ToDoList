@@ -1,0 +1,9 @@
+.todolist-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap:15px;
+    width: 90%;
+    flex-wrap: wrap;
+    list-style: none;
+}
